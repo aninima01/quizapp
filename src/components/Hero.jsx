@@ -18,7 +18,24 @@ const Hero = () => {
         muted
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60"></div>
+
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+        <div className="flex justify-end space-x-4 p-4">
+          <button
+            onClick={() => navigate("/login")}
+            className="px-8 py-4 bg-green-500 hover:bg-green-600 text-white text-white font-semibold text-xl rounded-full shadow-xl transition-transform transform hover:scale-110 animate-bounce"
+          >
+            Login
+          </button>
+
+          <button
+            onClick={() => navigate("/signup")}
+            className="px-8 py-4 bg-green-500 hover:bg-green-600 text-white text-white font-semibold text-xl rounded-full shadow-xl transition-transform transform hover:scale-110 animate-bounce"
+          >
+            SignUp
+          </button>
+        </div>
+
         <h1 className="text-8xl md:text-8xl font-extrabold mb-6 animate-fadeIn">
           <span className="block bg-gradient-to-br from-yellow-300 via-pink-300 to-purple-400 text-transparent bg-clip-text drop-shadow-lg shadow-yellow-300 rounded-lg animate-pulse ">
             Welcome to Questoria
@@ -43,7 +60,7 @@ const Hero = () => {
           </button>
           <button
             onClick={() => navigate("/quote")}
-            className="px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-semibold text-xl rounded-full shadow-xl transition-transform transform hover:scale-110"
+            className="px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white text-white font-semibold text-xl rounded-full shadow-xl transition-transform transform hover:scale-110 animate-bounce"
           >
             Quote of the Day
           </button>
